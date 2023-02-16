@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+background: white;
+--primary-accent-color: hsl(198,19%,57%);
+}
+
+body {
+  /* background: #abc123; */
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family:  'Helvetica', 'Arial', sans-serif;
+}
+
+.top-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.logo-top img {
+  height: 50px;
+  width: 100%;
+}
+
+.menu-spread {
+  flex-grow: 1;
+}
+
+.menu {
+  text-decoration: none;
+  list-style-type: none;
+  display:flex;
+  gap: 4rem;
+  justify-content: center;
+  font-weight: bold;
+  padding: 0;
+}
+
+.primary-button {
+  padding: 1rem;
+  background: var(--primary-accent-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.book-appointment {
+  margin: 1rem;
+}
+
+.page-section {
+  display: flex;  
+  margin-top: 5rem;
+}
+
+.hero-textual, .hero-visual {
+  flex: 1 1 0;
+}
+
+.hero-textual h1 {
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-textual h1 span {
+  color: var(--primary-accent-color);
+}
+
+.hero-textual p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#scissor-graphic {
+  position: absolute;
+  aspect-ratio: 1;
+  height: 4rem;
+  top: 10%;
+  right: 30%;
+  transform: rotateZ(20deg);
+}
+
+.text-hero-bottom {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+}
+
+.get-started {
+  font-size: larger;
+  padding: 1rem 5rem 1rem 5rem;
+}
+
+.watch-video {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.watch-video span {
+  font-size: large;
+  font-weight: bold;
+}
+
+#play-button {
+  color: var(--primary-accent-color);
+}
+
+.services {
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.carousel {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.show-service {
+  display: grid;
+  grid-auto-rows: 1fr;
+  margin-top: 3rem;
+  padding: 1rem 1rem 0 1rem;
+  background: #567abc;
+  border-radius: .5rem;
+  flex: 1 1 0;
+  min-width: 17.625rem;
+}
+
+.show-service > div {
+  padding: .25em;
+}
+
+.show-service img {
+  height: 8rem;
+}
+
+.show-service div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-image {
+  margin-top: 2rem;
+}
+
+.service-content {
+  justify-self: flex-start;
+  
+}
+
+.service-name {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.service-description {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69705130bf.js" crossorigin="anonymous"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="top-header">
+      <div class="logo-top">
+        <img src="/logo_main.png" alt="Logo of the barbershop">
+      </div>
+      <nav class="menu-spread">
+        <ul class="menu">
+          <a><li>Home</li></a>
+          <li>Services</li>
+          <li>About</li>
+          <a><li>Contact</li></a>
+        </ul>
+      </nav>
+      <button class="primary-button book-appointment">
+        Book Appointment
+      </button>
+    </header>
+    <div class="page-section">
+      <section class="hero-textual">
+        <div><h1>We are looking to make you <span>handsome</span></h1></div>
+        <p>Transform your look and boost your confidence at our premier venture. Experience top-notch service and leave feeling sharp and refreshed. Book now.</p>
+        <div class="text-hero-bottom">
+          <button class="primary-button get-started">
+            Get started
+          </button>
+          <div class="watch-video">
+            <i class="fa-solid fa-circle-play fa-3x" id="play-button"></i> <span>Watch video</span>
+          </div>
+        </div>
+      </section>
+      <section class="hero-visual">
+        <img src="/scissors.png" alt="Scissors and comb logo" id="scissor-graphic">
+        <img src="/barber-hero-graphic.png" alt="Picture of the barber holding his handy straight razor">
+      </section>
+    </div>
+    <main class="page-section services">
+      <h2>Our Services</h2>
+      <!-- https://www.flaticon.com/packs/hairdressing-45 -->
+      <!-- https://www.flaticon.com/packs/barbershop-30 -->
+      <!-- https://www.flaticon.com/packs/beauty-salon-2 -->
+      <!-- https://www.flaticon.com/packs/hairdressing-52 -->
+      <div class="carousel">
+        <div class="show-service">
+          <div class="service-image">
+            <img src="/hair-cut.png" alt="">
+          </div>
+          <div class="service-content">
+            <h3 class="service-name">Modern Haircut</h3>
+            <p class="service-description">Fresh cuts for all ages - classic or modern, we cater to your style.</p>
+          </div>
+        </div>
+        <div class="show-service">
+          <div class="service-image">
+            <img src="/beard-shaping.png" alt="">
+          </div>
+          <div class="service-content">
+            <h3 class="service-name">Beard Trimming</h3>
+            <p class="service-description">From sculpted to full and rugged, our beard grooming services will leave you looking sharp.</p>
+          </div>
+        </div>
+        <div class="show-service">
+          <div class="service-image">
+            <img src="/hair-style.png" alt="">
+          </div>
+          <div class="service-content">
+            <h3 class="service-name">Hair Styling</h3>
+            <p class="service-description">Get a sharp look for your special event with our expert styling services. Book now.</p>
+          </div>
+        </div>
+        <div class="show-service">
+          <div class="service-image">
+            <img src="/hair-color.png" alt="">
+          </div>
+          <div class="service-content">
+            <h3 class="service-name">Hair Coloring</h3>
+            <p class="service-description">Add some color and style to your look with our high-quality hair coloring services.</p>
+          </div>
+        </div>
+        <div class="show-service">
+          <div class="service-image">
+            <img src="/straight-shave.png" alt="">
+          </div>
+          <div class="service-content">
+            <h3 class="service-name">Shaves</h3>
+            <p class="service-description">Our traditional hot towel shave will leave you feeling refreshed and polished.</p>
+          </div>
+        </div>
+      <!-- Carousal -->
+    </main>
+    <!-- <a href="https://www.flaticon.com/free-icons/salon" title="salon icons">Salon icons created by Freepik - Flaticon</a> -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
