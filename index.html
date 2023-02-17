@@ -26,9 +26,11 @@
       </button>
     </header>
     <div class="page-section">
-      <section class="hero-textual">
-        <div><h1>We are looking to make you <span>handsome</span></h1></div>
-        <p>Transform your look and boost your confidence at our premier venture. Experience top-notch service and leave feeling sharp and refreshed. Book now.</p>
+      <section class="split-screen-h">
+        <div>
+          <h1 id="hero-heading">We are looking to make you <span>handsome</span></h1>
+        </div>
+        <p class="description">Transform your look and boost your confidence at our premier venture. Experience top-notch service and leave feeling sharp and refreshed. Book now.</p>
         <div class="text-hero-bottom">
           <button class="primary-button get-started">
             Get started
@@ -38,65 +40,99 @@
           </div>
         </div>
       </section>
-      <section class="hero-visual">
+      <section class="split-screen-h hero-visual">
         <img src="/scissors.png" alt="Scissors and comb logo" id="scissor-graphic">
         <img src="/barber-hero-graphic.png" alt="Picture of the barber holding his handy straight razor">
+        <!-- https://www.freepik.com/search?author=4522173&authorSlug=serhii_bobyk&format=author&query=barber -->
       </section>
     </div>
-    <main class="page-section services">
-      <h2>Our Services</h2>
-      <!-- https://www.flaticon.com/packs/hairdressing-45 -->
-      <!-- https://www.flaticon.com/packs/barbershop-30 -->
+    <main class="page-section secondary-section">
+      <h2 class="heading-secondary">Our Services</h2>
       <!-- https://www.flaticon.com/packs/beauty-salon-2 -->
-      <!-- https://www.flaticon.com/packs/hairdressing-52 -->
       <div class="carousel">
         <div class="show-service">
           <div class="service-image">
             <img src="/hair-cut.png" alt="">
-          </div>
-          <div class="service-content">
-            <h3 class="service-name">Modern Haircut</h3>
-            <p class="service-description">Fresh cuts for all ages - classic or modern, we cater to your style.</p>
-          </div>
+          </div>          
+          <h3 class="service-name">Modern Haircut</h3>
+          <p class="service-description">Fresh cuts for all ages - classic or modern, we cater to your style.</p>         
+          <p class="service-price">Price: ₹150</p>         
         </div>
         <div class="show-service">
           <div class="service-image">
             <img src="/beard-shaping.png" alt="">
-          </div>
-          <div class="service-content">
-            <h3 class="service-name">Beard Trimming</h3>
-            <p class="service-description">From sculpted to full and rugged, our beard grooming services will leave you looking sharp.</p>
-          </div>
+          </div>          
+          <h3 class="service-name">Beard Trimming</h3>
+          <p class="service-description">From sculpted to full and rugged, our beard grooming services will leave you looking sharp.</p>
+          <p class="service-price">Price: ₹200</p>  
         </div>
         <div class="show-service">
           <div class="service-image">
             <img src="/hair-style.png" alt="">
           </div>
-          <div class="service-content">
-            <h3 class="service-name">Hair Styling</h3>
-            <p class="service-description">Get a sharp look for your special event with our expert styling services. Book now.</p>
-          </div>
+          <h3 class="service-name">Hair Styling</h3>
+          <p class="service-description">Get a sharp look for your special event with our expert styling services. Book now.</p>
+          <p class="service-price">Price: ₹250</p>  
         </div>
         <div class="show-service">
           <div class="service-image">
             <img src="/hair-color.png" alt="">
           </div>
-          <div class="service-content">
-            <h3 class="service-name">Hair Coloring</h3>
-            <p class="service-description">Add some color and style to your look with our high-quality hair coloring services.</p>
-          </div>
+          <h3 class="service-name">Hair Coloring</h3>
+          <p class="service-description">Add some color and style to your look with our high-quality hair coloring services.</p>
+          <p class="service-price">Price: ₹300</p>  
         </div>
         <div class="show-service">
           <div class="service-image">
             <img src="/straight-shave.png" alt="">
           </div>
-          <div class="service-content">
-            <h3 class="service-name">Shaves</h3>
-            <p class="service-description">Our traditional hot towel shave will leave you feeling refreshed and polished.</p>
-          </div>
+          <h3 class="service-name">Shaves</h3>
+          <p class="service-description">Our traditional hot towel shave will leave you feeling refreshed and polished.</p>
+          <p class="service-price">Price: ₹350</p>  
         </div>
+      </div>
+      <p class="description modal-expander">View full service price list</p>
       <!-- Carousal -->
     </main>
+    <section class="page-section secondary-section">
+      <!-- <h2 class="heading-secondary">About Us</h2> -->
+      <div class="about-us">
+        <div class="split-screen-h about-graphic">
+          <!-- Photo by <a href="https://unsplash.com/@vechorko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dmitry Vechorko</a> on <a href="https://unsplash.com/photos/E9PFbdhZmus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+          <img id="about-image" src="/barber-about-graphic01.png" alt="Picture of the head barber beside barbershop description">
+        </div>
+        <div class="split-screen-h about-text">
+          <h2 class="heading-secondary">About Us</h2>
+          <p class="description">Anurag's 20+ years of barbering experience and passion for grooming drives our exceptional service.</p>
+          <!-- Change the color of the paragraph below in order to create distinction -->
+          <p class="description">At our barbershop, we don't just provide haircuts - we create an experience. Our team of skilled barbers are dedicated to giving you a personalized and memorable grooming session.</p>
+          <p class="modal-expander">Meet the team</p>
+        </div>
+      </div>
+    </section>
+    <section class="page-section secondary-section">
+      <h2 class="heading-secondary">Our Gallery</h3>
+      <div class="gallery-container">
+       <div class="gallery-element">
+          <img src="/gallery/display-01.jpg" alt="">
+        </div>
+       <div class="gallery-element">
+          <img src="" alt="">
+        </div>
+       <div class="gallery-element">
+          <img src="" alt="">
+        </div>
+       <div class="gallery-element">
+          <img src="" alt="">
+        </div>
+       <div class="gallery-element">
+          <img src="" alt="">
+        </div>
+       <div class="gallery-element">
+          <img src="" alt="">
+        </div>
+      </div>
+    </section>
     <!-- <a href="https://www.flaticon.com/free-icons/salon" title="salon icons">Salon icons created by Freepik - Flaticon</a> -->
     <script type="module" src="/main.js"></script>
   </body>

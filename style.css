@@ -61,22 +61,22 @@ body {
   margin-top: 5rem;
 }
 
-.hero-textual, .hero-visual {
+.split-screen-h {
   flex: 1 1 0;
 }
 
-.hero-textual h1 {
+#hero-heading {
   font-size: 5rem;
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
-.hero-textual h1 span {
+#hero-heading span {
   color: var(--primary-accent-color);
 }
 
-.hero-textual p {
-  margin-top: 2rem;
+.description {
   font-size: 1.5rem;
   font-weight: lighter;
 }
@@ -126,28 +126,50 @@ body {
   color: var(--primary-accent-color);
 }
 
-.services {
+.secondary-section {
   flex-direction: column;
   align-items: center;
-  font-size: 2rem;
+}
+
+.heading-secondary {  
+  font-size: 3rem;
 }
 
 .carousel {
   display: flex;
   gap: 1.5rem;
-  max-width: 100%;
-  overflow-x: scroll;
+  max-width: 120%;
+  overflow-x: auto;
 }
 
 .show-service {
   display: grid;
-  grid-auto-rows: 1fr;
   margin-top: 3rem;
+  margin-bottom: 1.5rem;
   padding: 1rem 1rem 0 1rem;
-  background: #567abc;
-  border-radius: .5rem;
+  border-radius: .75rem;  
+  grid-auto-columns: 1fr;
+  grid-template-rows: 4fr 1fr 2fr;
   flex: 1 1 0;
-  min-width: 17.625rem;
+  min-width: 13.45rem;
+  transition: all 0.25s ease;
+}
+
+.show-service:hover {
+  background: var(--primary-accent-color);
+}
+
+.modal-expander {
+  cursor: pointer;
+  border-bottom: 3px var(--primary-accent-color) solid;
+  padding-bottom: .25rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: all 0.25s ease;
+}
+
+.modal-expander:hover {
+  transform: translateY(-.25rem);
 }
 
 .show-service > div {
@@ -169,18 +191,44 @@ body {
   margin-top: 2rem;
 }
 
-.service-content {
-  justify-self: flex-start;
-  
-}
 
 .service-name {
   font-size: 1.5rem;
-  margin-top: 1rem;
+  place-self: center;
 }
 
 .service-description {
   font-size: 1rem;
   text-align: center;
-  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.service-price {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.about-us {
+  display: flex;
+  width: 100%;
+}
+
+.about-graphic {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+#about-image {
+  height: 30rem;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4rem;
 }
