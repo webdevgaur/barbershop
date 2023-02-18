@@ -9,24 +9,27 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header class="top-header">
+    <header class="top-header" id="home">
       <div class="logo-top">
         <img src="/logo_main.png" alt="Logo of the barbershop">
       </div>
       <nav class="menu-spread">
         <ul class="menu">
-          <a><li>Home</li></a>
-          <li>Services</li>
-          <li>About</li>
-          <a><li>Contact</li></a>
+          <a href="#home" class="navigation-link"><li>Home</li></a>
+          <a href="#services" class="navigation-link"><li>Services</li></a>
+          <a href="#about" class="navigation-link"><li>About</li></a>
+          <a href="#gallery" class="navigation-link"><li>Gallery</li></a>
+          <a href="tel:+911234567898" class="navigation-link"><li>Contact</li></a>
         </ul>
       </nav>
+      
       <button class="primary-button book-appointment">
         Book Appointment
       </button>
+      
     </header>
     <div class="page-section">
-      <section class="split-screen-h">
+      <section class="split-screen-h hero-textual">
         <div>
           <h1 id="hero-heading">We are looking to make you <span>handsome</span></h1>
         </div>
@@ -46,7 +49,7 @@
         <!-- https://www.freepik.com/search?author=4522173&authorSlug=serhii_bobyk&format=author&query=barber -->
       </section>
     </div>
-    <main class="page-section secondary-section">
+    <main class="page-section secondary-section" id="services">
       <h2 class="heading-secondary">Our Services</h2>
       <!-- https://www.flaticon.com/packs/beauty-salon-2 -->
       <div class="carousel">
@@ -94,7 +97,7 @@
       <p class="description modal-expander">View full service price list</p>
       <!-- Carousal -->
     </main>
-    <section class="page-section secondary-section">
+    <section class="page-section secondary-section" id="about">
       <!-- <h2 class="heading-secondary">About Us</h2> -->
       <div class="about-us">
         <div class="split-screen-h about-graphic">
@@ -110,27 +113,40 @@
         </div>
       </div>
     </section>
-    <section class="page-section secondary-section">
+    <section class="page-section secondary-section" id="gallery">
       <h2 class="heading-secondary">Our Gallery</h3>
       <div class="gallery-container">
        <div class="gallery-element">
           <img src="/gallery/display-01.jpg" alt="">
         </div>
        <div class="gallery-element">
-          <img src="" alt="">
+          <img src="/gallery/display-02.jpg" alt="">
         </div>
        <div class="gallery-element">
-          <img src="" alt="">
+          <img src="/gallery/display-03.jpg" alt="">
         </div>
        <div class="gallery-element">
-          <img src="" alt="">
+          <img src="/gallery/display-04.jpg" alt="">
         </div>
        <div class="gallery-element">
-          <img src="" alt="">
+          <img src="/gallery/display-05.jpg" alt="">
         </div>
        <div class="gallery-element">
-          <img src="" alt="">
+          <img src="/gallery/display-06.jpg" alt="">
         </div>
+      </div>
+    </section>
+    <nav class="home-navigation">
+      <button class="home-navigation-button primary-button">
+        <i class="fa-solid fa-arrow-up fa-2x"></i>
+      </button>
+    </nav>
+    <section class="modal">
+      <div class="modal-window">
+        <p>🎉</p>
+        <h1 class="heading-secondary congratulate-heading">Great Decision!</h1>
+        <p class="description">You're one click away from experiencing the best grooming service in town!</p>
+        <a class="book-now-link" href="tel:+911234567898">Book it!</a>
       </div>
     </section>
     <!-- <a href="https://www.flaticon.com/free-icons/salon" title="salon icons">Salon icons created by Freepik - Flaticon</a> -->
