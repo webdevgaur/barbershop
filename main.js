@@ -17,26 +17,22 @@ function scrollFunction() {
 
 // modal window for book appointment
 const modal = document.querySelector('.modal');
-const modalWindow = document.querySelector('.modal-window');
+const modalWindowContent = document.querySelector('.modal-window-content');
 const bookAppointmentBtn = document.querySelector('.book-appointment');
 const getStartedtBtn = document.querySelector('.get-started');
+const modalCloser = document.querySelector('.close-modal');
 
-const modalContent = `<h1>Great Decision!</h1><p>You're one click away from experiencing the best grooming service in town!</p><a href="tel:+911234567898">Book it!</a>`;
+const modalContent = `<p id="party-horn">🎉</p><h1 class="heading-secondary congratulate-heading">Great Decision!</h1><p class="description">You're one click away from experiencing the best grooming service in town!</p><a class="book-now-link primary-button" href="tel:+911234567898">Book it!</a>`;
 
 const toggleModal = () => {
     modal.style.display = 'flex';
-    modal.style.justifyContent = 'center';
-    modal.style.alignItems = 'center';
-    modalWindow.insertAdjacentHTML('afterbegin', modalContent);
-    modalWindow.style.color = 'tomato';
+    modalWindowContent.insertAdjacentHTML('afterbegin', modalContent);
 }
 
 bookAppointmentBtn.addEventListener('click', toggleModal, false);
+getStartedtBtn.addEventListener('click', toggleModal, false);
 
-// temporary fix. Do remove
-// modal.addEventListener('click', () => {
-//     modal.style.display = 'none';
-//     modal.style.removeProperty('justify-content');
-//     modal.style.removeProperty('align-items');
-//     modalWindow.innerHTML = '';
-// });
+modalCloser.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalWindowContent.innerHTML = '';
+});

@@ -11,7 +11,7 @@
   <body>
     <header class="top-header" id="home">
       <div class="logo-top">
-        <img src="/logo_main.png" alt="Logo of the barbershop">
+        <img src="/logo_main.png" alt="Logo of the barbershop" loading="eager">
       </div>
       <nav class="menu-spread">
         <ul class="menu">
@@ -33,20 +33,22 @@
         <div>
           <h1 id="hero-heading">We are looking to make you <span>handsome</span></h1>
         </div>
-        <p class="description">Transform your look and boost your confidence at our premier venture. Experience top-notch service and leave feeling sharp and refreshed. Book now.</p>
-        <div class="text-hero-bottom">
-          <button class="primary-button get-started">
-            Get started
-          </button>
-          <div class="watch-video">
-            <i class="fa-solid fa-circle-play fa-3x" id="play-button"></i> <span>Watch video</span>
+        <div class="hero-surface">
+          <p class="description">Transform your look and boost your confidence at our premier establishment. Experience top-notch service and leave feeling sharp and refreshed. Book now.</p>
+          <div class="text-hero-bottom">
+            <button class="primary-button get-started">
+              Get started
+            </button>
+            <div class="watch-video">
+              <i class="fa-solid fa-circle-play fa-3x" id="play-button"></i> <span>Watch video</span>
+            </div>
           </div>
         </div>
       </section>
       <section class="split-screen-h hero-visual">
-        <img src="/scissors.png" alt="Scissors and comb logo" id="scissor-graphic">
-        <img src="/barber-hero-graphic.png" alt="Picture of the barber holding his handy straight razor">
-        <!-- https://www.freepik.com/search?author=4522173&authorSlug=serhii_bobyk&format=author&query=barber -->
+        <img src="/pointing-barber-graphic.png" alt="Picture of a barber holding a trimmer pointing straight at you" class="hero-graphic" loading="eager">
+        <!-- Attribution for second barber image -
+        <a href="https://www.freepik.com/free-photo/confident-young-handsome-male-barber-uniform-holding-hair-clippers-showing-you-gesture-isolated-pink-wall_13635004.htm#query=barber%20pointing%20towards%20camera&position=26&from_view=search&track=ais">Image by stockking</a> on Freepik -->
       </section>
     </div>
     <main class="page-section secondary-section" id="services">
@@ -55,7 +57,7 @@
       <div class="carousel">
         <div class="show-service">
           <div class="service-image">
-            <img src="/hair-cut.png" alt="">
+            <img loading="lazy" src="/hair-cut.png" alt="">
           </div>          
           <h3 class="service-name">Modern Haircut</h3>
           <p class="service-description">Fresh cuts for all ages - classic or modern, we cater to your style.</p>         
@@ -63,7 +65,7 @@
         </div>
         <div class="show-service">
           <div class="service-image">
-            <img src="/beard-shaping.png" alt="">
+            <img loading="lazy" src="/beard-shaping.png" alt="">
           </div>          
           <h3 class="service-name">Beard Trimming</h3>
           <p class="service-description">From sculpted to full and rugged, our beard grooming services will leave you looking sharp.</p>
@@ -71,7 +73,7 @@
         </div>
         <div class="show-service">
           <div class="service-image">
-            <img src="/hair-style.png" alt="">
+            <img loading="lazy" src="/hair-style.png" alt="">
           </div>
           <h3 class="service-name">Hair Styling</h3>
           <p class="service-description">Get a sharp look for your special event with our expert styling services. Book now.</p>
@@ -79,7 +81,7 @@
         </div>
         <div class="show-service">
           <div class="service-image">
-            <img src="/hair-color.png" alt="">
+            <img loading="lazy" src="/hair-color.png" alt="">
           </div>
           <h3 class="service-name">Hair Coloring</h3>
           <p class="service-description">Add some color and style to your look with our high-quality hair coloring services.</p>
@@ -87,7 +89,7 @@
         </div>
         <div class="show-service">
           <div class="service-image">
-            <img src="/straight-shave.png" alt="">
+            <img loading="lazy" src="/straight-shave.png" alt="">
           </div>
           <h3 class="service-name">Shaves</h3>
           <p class="service-description">Our traditional hot towel shave will leave you feeling refreshed and polished.</p>
@@ -102,7 +104,7 @@
       <div class="about-us">
         <div class="split-screen-h about-graphic">
           <!-- Photo by <a href="https://unsplash.com/@vechorko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dmitry Vechorko</a> on <a href="https://unsplash.com/photos/E9PFbdhZmus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
-          <img id="about-image" src="/barber-about-graphic01.png" alt="Picture of the head barber beside barbershop description">
+          <img loading="lazy" id="about-image" src="/barber-about-graphic01.png" alt="Picture of the head barber beside barbershop description">
         </div>
         <div class="split-screen-h about-text">
           <h2 class="heading-secondary">About Us</h2>
@@ -117,22 +119,22 @@
       <h2 class="heading-secondary">Our Gallery</h3>
       <div class="gallery-container">
        <div class="gallery-element">
-          <img src="/gallery/display-01.jpg" alt="">
+          <img loading="lazy" src="/gallery/display-01.jpg" alt="">
         </div>
        <div class="gallery-element">
-          <img src="/gallery/display-02.jpg" alt="">
+          <img loading="lazy" src="/gallery/display-02.jpg" alt="">
         </div>
        <div class="gallery-element">
-          <img src="/gallery/display-03.jpg" alt="">
+          <img loading="lazy" src="/gallery/display-03.jpg" alt="">
         </div>
        <div class="gallery-element">
-          <img src="/gallery/display-04.jpg" alt="">
+          <img loading="lazy" src="/gallery/display-04.jpg" alt="">
         </div>
        <div class="gallery-element">
-          <img src="/gallery/display-05.jpg" alt="">
+          <img loading="lazy" src="/gallery/display-05.jpg" alt="">
         </div>
        <div class="gallery-element">
-          <img src="/gallery/display-06.jpg" alt="">
+          <img loading="lazy" src="/gallery/display-06.jpg" alt="">
         </div>
       </div>
     </section>
@@ -143,10 +145,15 @@
     </nav>
     <section class="modal">
       <div class="modal-window">
-        <p>🎉</p>
-        <h1 class="heading-secondary congratulate-heading">Great Decision!</h1>
-        <p class="description">You're one click away from experiencing the best grooming service in town!</p>
-        <a class="book-now-link" href="tel:+911234567898">Book it!</a>
+        <div class="close-modal">
+          <i class="fa-regular fa-circle-xmark fa-2x"></i>
+        </div>
+        <div class="modal-window-content">
+          <p id="party-horn">🎉</p>
+          <h1 class="heading-secondary congratulate-heading">Great Decision!</h1>
+          <p class="description">You're one click away from experiencing the best grooming service in town!</p>
+          <a class="book-now-link primary-button" href="tel:+911234567898">Book it!</a>
+        </div>
       </div>
     </section>
     <!-- <a href="https://www.flaticon.com/free-icons/salon" title="salon icons">Salon icons created by Freepik - Flaticon</a> -->

@@ -1,29 +1,27 @@
-Make nav items clickable -----
-
-Add a home navigation button ------
-
-Add functionality to book appointments and get started buttons 
-
 Change body and header fonts and colors (use variables)
 
-Resize hero image
-
 Link video
-
-Lazy loading on images
-
-Optimize all images for the web
 
 Service price list modal window
 
 Our team modal window
 
-enlarge gallery images on hover ------
+
 
 adjust styling for smaller screen
 
-adjust styling for mobile devices
+adjust styling for mobile devices (book appointment button will be replaced by actual phone number)
 
 services and meet the team carousels (for mobile)
 
 Display all the appropriate attributions
+
+
+
+enlarge gallery images on hover ------
+Make nav items clickable -----
+Add a home navigation button ------
+Add functionality to book appointments and get started buttons -------
+Resize hero image -----
+Lazy loading on images ------
+Optimize all images for the web -----
