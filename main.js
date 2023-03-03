@@ -15,9 +15,10 @@ function scrollFunction() {
   }
 }
 
-// modal window for book appointment
+// modal window for book appointment/get started
 const modal = document.querySelector('.modal');
 const modalWindowContent = document.querySelector('.modal-window-content');
+modalWindowContent.innerHTML = '';  // Setting it to empty initially to avoid douible content showing up on page load
 const bookAppointmentBtn = document.querySelector('.book-appointment');
 const getStartedtBtn = document.querySelector('.get-started');
 const modalCloser = document.querySelector('.close-modal');
