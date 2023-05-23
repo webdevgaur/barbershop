@@ -1,7 +1,5 @@
 Link video
 
-Service price list modal window
-
 Our team modal window
 
 adjust styling for smaller screen
@@ -26,3 +24,4 @@ Resize hero image -----
 Lazy loading on images ------
 Optimize all images for the web -----
 Change body and header fonts and colors (use variables) --------
+Service price list modal window ----------

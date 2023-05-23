@@ -379,6 +379,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .modal {
   display: none;  
+  /* display: flex; */
   width: 100vw;
   height: 100vh;
   width: 100dvw;
@@ -452,4 +453,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .book-now-link:hover {
   color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+}
+
+.grid-item-service, .grid-item-price {
+  font-size: var(--fs-500);
+  border: 2px solid var(--primary-accent-color);
+  padding: 0.5rem var(--fs-100);
+  border-bottom-width: 0;
+}
+
+.grid-item-service {
+  border-right-width: 0;
+}
+
+.grid-item-price {
+  text-align: right;
+}
+
+.grid-container > :nth-last-child(-n+2) {
+  border-bottom-width: 2px;
 }
