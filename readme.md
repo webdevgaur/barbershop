@@ -10,6 +10,16 @@ Display all the appropriate attributions
 
 Carousel for gallery
 
+Adjust styling for tablet screens (700px to 1200px)
+   No horizontal scrolling ------
+   Hamburger menu
+   Logo
+   Hero image and text to not be aligned in horizontal flex, hero image to be bigger and behind text
+   reduce margin andd padding for body element -------
+   Dialog box inline size to 80% + corresponding change in the close icon -------
+   Check if that takes care of the gallery situation (remove gap and padding from .gallery-container)
+   Redesign the About Us section
+
 
 
 Bug: On first load we have double content on the get started button -------

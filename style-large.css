@@ -21,6 +21,10 @@
   --fs-700: 2.75rem;
   --fs-900: 3.5rem;
   }
+
+  #hamburger {
+    display: none;
+  }
   
   body {
     max-width: 80%;
@@ -43,7 +47,6 @@
   }
   
   .logo-top img {
-    height: 50px;
     width: 100%;
   }
   
@@ -52,10 +55,10 @@
   }
   
   .menu {
-    display: flex;
     text-decoration: none;
     list-style-type: none;
     display:flex;
+    flex-direction: row;
     justify-content: center;
     font-weight: bold;
     flex: 1 1 0;

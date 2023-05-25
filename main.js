@@ -125,4 +125,10 @@ const servicesOffered = [
   },
 ];
 
+// Toggle menu on tablet and mobile breakpoints
+const hamburger = document.querySelector('#hamburger');
+const menu = document.querySelector('.menu-spread');
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('menu-spread-active');
+});
 

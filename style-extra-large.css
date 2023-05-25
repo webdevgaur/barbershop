@@ -22,6 +22,10 @@ background: white;
 --fs-900: 5rem;
 }
 
+#hamburger {
+  display: none;
+}
+
 body {
   max-width: 80%;
   margin-left: auto;
@@ -52,10 +56,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu {
-  display: flex;
   text-decoration: none;
   list-style-type: none;
   display:flex;
+  flex-direction: row;
   justify-content: center;
   font-weight: bold;
   flex: 1 1 0;
