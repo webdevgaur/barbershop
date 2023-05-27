@@ -52,6 +52,7 @@
   
   .menu-spread {
     flex-grow: 1;
+    display: block;
   }
   
   .menu {
@@ -107,7 +108,8 @@
   }
   
   .page-section {
-    display: flex;  
+    display: flex;
+    flex-direction: row;
     margin-top: 3rem;
   }
   
@@ -149,7 +151,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    position: relative;
+    opacity: 1;
   }
   
   .hero-graphic {
@@ -167,6 +169,7 @@
   
   .text-hero-bottom {
     display: flex;
+    flex-direction: row;
     margin-top: 2rem;
     justify-content: flex-start;
     align-items: center;

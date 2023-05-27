@@ -62,7 +62,6 @@ function setModalContent(modal) {
 const toggleModal = (buttonID, e) => {
     modal.style.display = 'flex';
     setModalContent(buttonID);
-    // modalWindowContent.insertAdjacentHTML('afterbegin', modalContent);
 }
 
 modalCloser.addEventListener('click', () => {
@@ -74,8 +73,24 @@ modalCloser.addEventListener('click', () => {
 const bookAppointmentBtn = document.querySelector('.book-appointment');
 const getStartedtBtn = document.querySelector('.get-started');
 
-bookAppointmentBtn.addEventListener('click',(e)=> toggleModal('getStarted', e), false);
-getStartedtBtn.addEventListener('click',(e)=> toggleModal('getStarted', e), false);
+
+function decideActionBasedOnScreenSize() {
+  let redirectFn = () => {
+    window.location.href = 'tel:+911234567898';
+  }
+  if (window.innerWidth < 700) {
+    bookAppointmentBtn.addEventListener("click", redirectFn);
+    getStartedtBtn.addEventListener("click", redirectFn);
+  } else {
+    // May need to remove the eventlisteners if the screen size changes
+    bookAppointmentBtn.addEventListener('click',(e)=> toggleModal('getStarted', e), false);
+    getStartedtBtn.addEventListener('click',(e)=> toggleModal('getStarted', e), false);
+  }
+}
+
+// window.addEventListener('resize', decideActionBasedOnScreenSize);
+
+decideActionBasedOnScreenSize();
 
 
 // modal window for service price list
@@ -125,10 +140,5 @@ const servicesOffered = [
   },
 ];
 
-// Toggle menu on tablet and mobile breakpoints
-const hamburger = document.querySelector('#hamburger');
-const menu = document.querySelector('.menu-spread');
-hamburger.addEventListener('click', () => {
-  menu.classList.toggle('menu-spread-active');
-});
+
 

@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu-spread {
   flex-grow: 1;
+  display: block;
 }
 
 .menu {
@@ -108,7 +109,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-section {
-  display: flex;  
+  display: flex;
+  flex-direction: row;
   margin-top: 5rem;
 }
 
@@ -150,37 +152,16 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   position: relative;
   padding: 3em ;
-  position: relative;
+  opacity: 1;
 }
 
 .hero-graphic {
   width: 70%;
 }
 
-/* .square-graphic {
-  position: absolute;
-  width: 60%;
-  height: 60%;
-  border-radius: var(--surface-border-radius);
-  background-color: var(--primary-accent-color);
-  transform: rotateZ(20deg) translateX(10%) translateY(12%);
-}
-
-.hero-graphic-top {
-  transform: translateX(-1rem) translateY(-11.5rem) rotateZ(-20deg);
-} */
-
-#scissor-graphic {
-  position: absolute;
-  aspect-ratio: 1;
-  height: 4rem;
-  top: 10%;
-  right: 30%;
-  transform: rotateZ(20deg);
-}
-
 .text-hero-bottom {
   display: flex;
+  flex-direction: row;
   margin-top: 2rem;
   justify-content: flex-start;
   align-items: center;
