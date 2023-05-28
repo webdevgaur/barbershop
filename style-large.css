@@ -32,7 +32,6 @@
     margin-right: auto;
     font-family:  var(--ff-body);
     color: var(--body-text-color);
-    padding: 2em var(--surface-padding);
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -42,12 +41,12 @@
   
   .top-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   
   .logo-top img {
-    width: 100%;
+    width: 5rem;
   }
   
   .menu-spread {
@@ -74,7 +73,6 @@
   
   .navigation-link > li {
     padding: 1em 2em;
-    margin: 0 1em;  
   }
   
   .navigation-link {   
@@ -148,25 +146,16 @@
   
   .hero-visual {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    position: relative;
+    position: static;
     opacity: 1;
   }
   
   .hero-graphic {
     width: 70%;
   }
-  
-  #scissor-graphic {
-    position: absolute;
-    aspect-ratio: 1;
-    height: 4rem;
-    top: 10%;
-    right: 30%;
-    transform: rotateZ(20deg);
-  }
-  
+
   .text-hero-bottom {
     display: flex;
     flex-direction: row;
@@ -179,6 +168,12 @@
   .get-started {
     font-size: var(--fs-100);
     padding: 1rem 3rem;
+    width: max-content;
+  }
+
+  .video-link {
+    display: flex;
+    justify-content: flex-start;
   }
   
   .watch-video {
@@ -190,6 +185,7 @@
     background-color: white;
     border-radius: var(--surface-border-radius);
     border: 2px solid var(--primary-accent-color);
+    width: max-content;
   }
   
   .watch-video:hover {
@@ -331,6 +327,7 @@
     gap: 1rem;
     margin-top: 1rem;
     padding: 2rem;
+    overflow: visible;
   }
   
   .gallery-element {
@@ -339,6 +336,8 @@
     transition: transform .25s ease;
     border: 10px solid white;
     border-radius: 1rem;
+    width: auto;
+    height: auto;
   }
   
   .gallery-element:hover {

@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-top img {
-  width: 20dvw;
+  width: 5rem;
 }
 
 .menu-spread {
@@ -111,13 +111,25 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   margin-top: 1rem;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
 }
 
 .get-started {
   font-size: var(--fs-300);
   padding: 0.75rem 40%;
+  width: 70dvw;
+}
+
+.video-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.video-link:link, .video-link:visited, .video-link:hover, .video-link:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 .watch-video {
@@ -125,7 +137,8 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.5rem;
   align-items: center;
   cursor: pointer;
-  padding: 0.75rem 37%;
+  padding: 0.75rem 35%;
+  width: 70dvw;
   background-color: white;
   border-radius: var(--surface-border-radius);
   border: 1px solid var(--primary-accent-color);
@@ -247,19 +260,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .gallery-container {
   display: flex;
-  width: 100%;
-  overflow: auto;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
   gap: 1rem;
   margin-top: 1rem;
 }
-
-/* .gallery-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 50%;
-  max-width: 100%;
-  margin-top: 1rem;
-} */
 
 .gallery-element {
   flex-shrink: 0;
@@ -273,28 +279,6 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   border-radius: var(--surface-border-radius);
 }
-
-
-/* .gallery-element {
-  display: grid;
-  gap: 1rem;
-  transition: transform .25s ease;
-  border: 10px solid white;
-  border-radius: 1rem;
-} */
-
-/*
-
-.gallery-element:hover {
-  transform: scale(1.1);
-} */
-
-/* .gallery-element > img {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  /* border-radius: 1rem; 
-}  */
 
 .home-navigation-button {
   display: none;
@@ -359,37 +343,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform .25s ease;
   z-index: 4;
 }
-
-/*
-
-.close-modal:hover {
-  transform: translateY(-.25rem);
-}
-
-#party-horn {
-  font-size: var(--fs-900);
-}
-
-.congratulate-heading {
-  border-bottom: 5px var(--primary-accent-color) solid;
-  padding-bottom: .25rem;
-}
-
-.book-now-link {
-  padding: 1em 4em;
-  font-size: var(--fs-300);
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: var(--surface-border-radius);
-}
-
-.book-now-link:link, .book-now-link:visited, .book-now-link:active {
-  color: white;
-}
-
-.book-now-link:hover {
-  color: black;
-} */
 
 .grid-container {
   display: grid;

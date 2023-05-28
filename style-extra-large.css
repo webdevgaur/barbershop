@@ -46,9 +46,12 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
+.logo-top {
+  flex-grow: 0;
+}
+
 .logo-top img {
-  height: 50px;
-  width: 100%;
+  width: 5rem;
 }
 
 .menu-spread {
@@ -150,7 +153,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
+  position: static;
   padding: 3em ;
   opacity: 1;
 }
@@ -171,6 +174,12 @@ h1, h2, h3, h4, h5, h6 {
 .get-started {
   font-size: var(--fs-100);
   padding: 1rem 5rem 1rem 5rem;
+  width: max-content;
+}
+
+.video-link {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .watch-video {
@@ -182,6 +191,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   border-radius: var(--surface-border-radius);
   border: 2px solid var(--primary-accent-color);
+  width: max-content;
 }
 
 .watch-video:hover {
@@ -325,6 +335,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1rem;
   margin-top: 1rem;
   padding: 3em;
+  overflow: visible;
 }
 
 .gallery-element {
@@ -333,6 +344,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform .25s ease;
   border: 10px solid white;
   border-radius: 1rem;
+  width: auto;
+  height: auto;
 }
 
 .gallery-element:hover {
@@ -363,8 +376,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .modal {
-  display: none;  
-  /* display: flex; */
+  display: none;
   width: 100vw;
   height: 100vh;
   width: 100dvw;

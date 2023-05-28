@@ -1,13 +1,10 @@
-Link video
-
-adjust styling for mobile devices (book appointment button will be replaced by actual phone number)
-   Add flex-direction: row in all style sheets above mobile
+Link video -------
 
 Display all the appropriate attributions
 
-Logo and header styling for extra large and large screens
+Logo and header styling for extra large and large screens ----------
 
-Logo disappears for large screens
+Logo disappears for large screens ---------
 
 
 
@@ -40,3 +37,5 @@ Adjust styling for tablet screens (700px to 1200px)
    Dialog box inline size to 80% + corresponding change in the close icon -------
    Check if that takes care of the gallery situation (remove gap and padding from .gallery-container) ---------
    Redesign the About Us section -------
+
+adjust styling for mobile devices (book appointment button will be replaced by actual phone number) -----------

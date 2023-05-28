@@ -38,17 +38,17 @@
   
   .top-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-grow: 1;
   }
 
   .logo-top {
-    flex-grow: 1;
+    flex-grow: 0;
   }
   
   .logo-top img {
-    width: 30%;
+    width: 5rem;
   }
 
   .menu-spread {
@@ -109,6 +109,7 @@
   .description {
     font-size: var(--fs-300);
     font-weight: lighter;
+    max-width: 80%;
   }
   
   .hero-visual {
@@ -125,20 +126,11 @@
     width: 70%;
   }
   
-  #scissor-graphic {
-    position: absolute;
-    aspect-ratio: 1;
-    height: 4rem;
-    top: 10%;
-    right: 30%;
-    transform: rotateZ(20deg);
-  }
-  
   .text-hero-bottom {
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
   }
@@ -146,6 +138,12 @@
   .get-started {
     font-size: var(--fs-100);
     padding: 1rem 3rem;
+    width: max-content;
+  }
+
+  .video-link {
+    display: flex;
+    justify-content: flex-start;
   }
   
   .watch-video {
@@ -157,6 +155,7 @@
     background-color: white;
     border-radius: var(--surface-border-radius);
     border: 2px solid var(--primary-accent-color);
+    width: max-content;
   }
   
   .watch-video:hover {
@@ -296,6 +295,8 @@
     grid-auto-rows: 50%;
     max-width: 100%;
     margin-top: 1rem;
+    overflow: visible;
+    gap: 0;
   }
   
   .gallery-element {
@@ -304,6 +305,8 @@
     transition: transform .25s ease;
     border: 10px solid white;
     border-radius: 1rem;
+    width: auto;
+    height: auto;
   }
   
   .gallery-element:hover {
